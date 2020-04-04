@@ -2,10 +2,15 @@
 name = "envsens"
 version = "0.1.0"
 description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["Junichi Kakisako <kilo.sw@gmail.com>"]
+
+[tool.poetry.scripts]
+envsens = 'envsens.console:run'
 
 [tool.poetry.dependencies]
 python = "^3.7"
+smbus2 = "^0.3.0"
+toml = "^0.10.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
